@@ -1,0 +1,119 @@
+/* app css stylesheet */
+h1, h2{
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+a{
+  width: 132px;
+}
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover {
+  background-color: #008001;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(white 0%, white 20%,#008001 20%, #008001 50%, #000000 50%, black 80%,white 80%, white 100%);
+}
+
+#startpicture {
+  display: block;
+  width: auto;
+  height: 25%;
+  align-content: auto;
+  margin-left: auto;
+  margin-top: 0px;
+  margin-right: auto;
+  border-radius: 100px / 100px;
+}
+
+.counter {
+  position: relative;
+  top: 20%;
+  left: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 40px;
+}
+
+#times {
+  color: white;
+}
+
+.gameButton {
+  background-color: black;
+  border-color: black;
+  color: white;
+  width: 120px;
+  padding: 14px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.results, tr, td {
+  border-collapse: separate;
+  border: 1px solid black;
+  table-layout: auto;
+  color: white;
+  mix-blend-mode: difference;
+  border-spacing: 50px 0;
+
+}
+#navbar {
+
+}
+.names {
+  position: relative;
+  left: 50px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+}
+
+iframe {
+  height: 600px;
+  width: 1000px;
+  background-color: white;
+}

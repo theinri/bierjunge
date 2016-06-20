@@ -1,0 +1,22 @@
+<div>
+  <span class="counter">Zeit:</span>
+  <span class="counter">{{counter}}</span>
+</div>
+
+<div>
+  <label>
+    <input  class="names" type="text" placeholder="Name Spieler 1" ng-model="times[0][0]">
+    <input  class="names" type="text" placeholder="Name Spieler 2" ng-model="times[0][1]">
+  </label>
+</div>
+
+<button class="gameButton" id="startButton" ng-click="start()" ng-keydown="alert('Hallo')">Start</button>
+<button class="gameButton" id="stopButton" ng-click="stop()">Stop</button>
+<button class="gameButton" id="resetButton" ng-click="reset(1)">Spieler 1 ist schneller</button>
+<button class="gameButton" id="resetButton2" ng-click="reset(2)">Spieler 2 ist schneller</button>
+<button class="gameButton" id="popButton" ng-click="popLast()">Entferne letzten Eintrag</button>
+
+<table class="results">
+  <tr ng-repeat="row in times">
+    <td ng-repeat="col in row track by $index">{{col}}</td>
+</table>
